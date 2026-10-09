@@ -33,5 +33,9 @@
 int main(){
     double weight, height, BMI;
     std::cout<<"Enter your weight"<<std::endl;
+    std::cin>>weight;
+    std::cout<<"Enter your height"<<std::endl;
+    std::cin>>height;
+    std::cout<<"Your BMI is " << weight / (height * height) <<std::endl;
 
 }
