@@ -1,0 +1,10 @@
+# Ignore files with no extension (Linux compiled programs like "hello")
+*
+!*.*
+!*/
+!Makefile
+
+# Ignore compiled files that do have extensions
+*.exe
+*.out
+*.o
