@@ -28,12 +28,16 @@
 // }
 
 int main(){
-    int n, sum;
-    n=1;
+    int n, sum, i;
+    i=1;
+    double ave = 0;
+    std::cin>>n;
     sum=0;
     while (n!=0){
-        std::cin>>n;
         sum = sum  + n;
-        std::cout << "There current sum is "<<sum<< "\n"<< std::endl;
+        ave = double(sum)/i;
+        i++;
+        std::cout << "There current averagte is "<<ave<< "\n"<< std::endl;
+        std::cin>>n;
     }
 }
