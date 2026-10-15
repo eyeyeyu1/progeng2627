@@ -27,17 +27,30 @@
 //     }
 // }
 
+// int main(){
+//     int n, sum, i;
+//     i=1;
+//     double ave = 0;
+//     std::cin>>n;
+//     sum=0;
+//     while (n!=0){
+//         sum = sum  + n;
+//         ave = double(sum)/i;
+//         i++;
+//         std::cout << "There current averagte is "<<ave<< "\n"<< std::endl;
+//         std::cin>>n;
+//     }
+// }
+
 int main(){
-    int n, sum, i;
-    i=1;
-    double ave = 0;
-    std::cin>>n;
-    sum=0;
-    while (n!=0){
-        sum = sum  + n;
-        ave = double(sum)/i;
-        i++;
-        std::cout << "There current averagte is "<<ave<< "\n"<< std::endl;
-        std::cin>>n;
+    int q, r, a, b;
+    q=0;
+    r=0;
+    std::cin>> a >>b;
+    while(a>=b){
+        a-=b;
+        q++;
     }
+    r=a;
+    std::cout<<"The quotient is "<<q<<"\nThe remainder is "<<r<<std::endl;
 }
