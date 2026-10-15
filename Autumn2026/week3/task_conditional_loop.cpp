@@ -15,22 +15,27 @@
 //     }
 // }
 
+
+// #include<iostream>
+// int main(){
+//     int n, x, upper, lower;
+//     std::cout<< "enter the upper and lower boundaries"<< std::endl;
+//     std::cin>>upper>>lower;
+//     n= (upper+lower)/2;
+//     std::cout<<n<<std::endl;
+//     std::cout<<"Is it larger or smaller?"<<std::endl;
+    
+
+// }
+
 int main(){
-    int n,i,max;
-    max=0;
-    std::cin>> n;
-    while(n!=1){
-        if(n%2==0){
-            n=n/2;
-        }else{
-            n=3*n+1;
+    int n;
+    std::cin>>n;
+    for(int i=2; i<n; i++){
+        if(n%i == 0){
+            std::cout<< "it is not a prime"<<std::endl;
+            return 0;
         }
-        if(n>max){
-            max=n;
-        }
-        std::cout<<n<<std::endl;
-        i++;
     }
-    std::cout<<"step taken: "<<i<<std::endl;
-    std::cout<<"max is: "<<max<<std::endl;
+    std::cout<< "It is prime"<<std::endl;
 }
