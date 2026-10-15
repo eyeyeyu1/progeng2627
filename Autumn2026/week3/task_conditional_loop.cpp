@@ -16,7 +16,7 @@
 // }
 
 int main(){
-    int n;
+    int n,i;
     std::cin>> n;
     while(n!=1){
         if(n%2==0){
@@ -25,5 +25,7 @@ int main(){
             n=3*n+1;
         }
         std::cout<<n<<std::endl;
+        i++;
     }
+    std::cout<<"step taken: "<<i<<std::endl;
 }
