@@ -16,7 +16,8 @@
 // }
 
 int main(){
-    int n,i;
+    int n,i,max;
+    max=0;
     std::cin>> n;
     while(n!=1){
         if(n%2==0){
@@ -24,8 +25,12 @@ int main(){
         }else{
             n=3*n+1;
         }
+        if(n>max){
+            max=n;
+        }
         std::cout<<n<<std::endl;
         i++;
     }
     std::cout<<"step taken: "<<i<<std::endl;
+    std::cout<<"max is: "<<max<<std::endl;
 }
