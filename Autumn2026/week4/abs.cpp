@@ -2,15 +2,33 @@
 
 #include <cmath>
 
-int main(){
-    int a, b, output;
-    std::cin>> a>> b;
-    while(b>=0){
-        output += pow(a,b);
-        b--;
+double power(int base, int exp){
+
+    if(exp==0){
+        return 1;
+    }else if(exp<0){
+        return 1.0/base*power(base, exp+1);
     }
-    std::cout<<output<<std::endl;
+    else{
+        return base*power(base, exp-1);
+    }
 }
+
+int main(){
+    std::cout<<power(2,-3)<<std::endl;
+}
+
+
+
+// int main(){
+//     int a, b, output;
+//     std::cin>> a>> b;
+//     while(b>=0){
+//         output += pow(a,b);
+//         b--;
+//     }
+//     std::cout<<output<<std::endl;
+// }
 
 // double abs(double input){
 //     if(input>0){
