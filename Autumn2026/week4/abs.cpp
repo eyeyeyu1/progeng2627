@@ -2,19 +2,29 @@
 
 #include <cmath>
 
-double abs(double input){
-    if(input>0){
-        return input;
-    }else{
-        return -1*input;
+int main(){
+    int a, b, output;
+    std::cin>> a>> b;
+    while(b>=0){
+        output += pow(a,b);
+        b--;
     }
+    std::cout<<output<<std::endl;
 }
-    int main(){
-        double input;
-        std::cout<<"enter a number "<<std::endl;
-        std::cin>>input;
-        std::cout<< "absolute value of "<<input<<" is "<< abs(input)<<std::endl;
-    }
+
+// double abs(double input){
+//     if(input>0){
+//         return input;
+//     }else{
+//         return -1*input;
+//     }
+// }
+//     int main(){
+//         double input;
+//         std::cout<<"enter a number "<<std::endl;
+//         std::cin>>input;
+//         std::cout<< "absolute value of "<<input<<" is "<< abs(input)<<std::endl;
+//     }
 
 
 
